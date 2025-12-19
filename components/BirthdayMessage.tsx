@@ -55,7 +55,7 @@ export function BirthdayMessage() {
           <p className="text-right">
             With love and celebration,
             <br />
-            <span className="text-pink-500">Your Friends & Family 💕</span>
+            <span className="text-pink-500">Your Friend Ikhsan</span>
           </p>
         </motion.div>
       </motion.div>
