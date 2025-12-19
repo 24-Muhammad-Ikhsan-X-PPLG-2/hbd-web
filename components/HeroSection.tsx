@@ -1,6 +1,6 @@
-import { motion } from "motion/react";
-import { FloatingBalloons } from "./FloatingBalloons";
-import { Fireworks } from "./Fireworks";
+import { motion } from 'motion/react';
+import { FloatingBalloons } from './FloatingBalloons';
+import { Fireworks } from './Fireworks';
 
 interface HeroSectionProps {
   onStartSurprise: () => void;
@@ -11,13 +11,13 @@ export function HeroSection({ onStartSurprise }: HeroSectionProps) {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400">
       <FloatingBalloons />
       <Fireworks />
-
+      
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <motion.h1
           initial={{ scale: 0, rotate: -10, opacity: 0 }}
           animate={{ scale: 1, rotate: 0, opacity: 1 }}
           transition={{
-            type: "spring",
+            type: 'spring',
             stiffness: 200,
             damping: 15,
             delay: 0.2,
@@ -27,17 +27,17 @@ export function HeroSection({ onStartSurprise }: HeroSectionProps) {
           <motion.span
             animate={{
               textShadow: [
-                "0 0 20px rgba(255,255,255,0.5)",
-                "0 0 40px rgba(255,255,255,0.8)",
-                "0 0 20px rgba(255,255,255,0.5)",
+                '0 0 20px rgba(255,255,255,0.5)',
+                '0 0 40px rgba(255,255,255,0.8)',
+                '0 0 20px rgba(255,255,255,0.5)',
               ],
             }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            馃帀 Happy Birthday, Obi! 馃巶
+            🎉 Happy Birthday, Obi! 🎂
           </motion.span>
         </motion.h1>
-
+        
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -50,14 +50,14 @@ export function HeroSection({ onStartSurprise }: HeroSectionProps) {
             whileTap={{ scale: 0.95 }}
             animate={{
               boxShadow: [
-                "0 0 20px rgba(255,255,255,0.5)",
-                "0 0 40px rgba(255,255,255,0.9)",
-                "0 0 20px rgba(255,255,255,0.5)",
+                '0 0 20px rgba(255,255,255,0.5)',
+                '0 0 40px rgba(255,255,255,0.9)',
+                '0 0 20px rgba(255,255,255,0.5)',
               ],
             }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
-            馃巵 Start the Surprise
+            🎁 Start the Surprise
           </motion.button>
         </motion.div>
       </div>
