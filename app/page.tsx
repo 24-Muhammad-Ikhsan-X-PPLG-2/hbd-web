@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { PartyPopperExplosion } from "@/components/PartyPopperExplosion";
 import { HeroSection } from "@/components/HeroSection"
